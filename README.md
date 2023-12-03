@@ -1,0 +1,1 @@
+Plant Based Yummies is a responsive and interactive vegan based website. 

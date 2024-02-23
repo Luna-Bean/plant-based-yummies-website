@@ -470,7 +470,7 @@ input, select, textarea {
 		}
 
 			.row > * {
-				padding: 50px 0 0 50px;
+				padding: 50px 0 0 95px;
 			}
 
 			.row.gtr-uniform {
@@ -713,7 +713,7 @@ input, select, textarea {
 				}
 
 					.row > * {
-						padding: 50px 0 0 50px;
+						padding: 50px 0 0 130px;
 					}
 
 					.row.gtr-uniform {
@@ -1203,7 +1203,7 @@ input, select, textarea {
 				}
 
 					.row > * {
-						padding: 50px 0 0 50px;
+						padding: 50px 0 0 70px;
 					}
 
 					.row.gtr-uniform {
@@ -2360,7 +2360,7 @@ section#header.wrapper{
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b, #footer a {
 			color: #fff;
 		}
-
+/*
 		#footer hr {
 			border-top-color: #333;
 			border-top-color: rgba(255, 255, 255, 0.05);
@@ -2420,9 +2420,9 @@ section#header.wrapper{
 		#footer .title {
 			background: #282b34 url("images/overlay.png");
 			color: #eee;
-		}
+		} */
 
-		#footer header.style1 {
+		/* #footer header.style1 {
 			padding-bottom: 6em;
 			margin-bottom: 6em;
 			border-bottom: solid 1px rgba(255, 255, 255, 0.05);
@@ -2446,12 +2446,12 @@ section#header.wrapper{
 
 			#footer .feature-list h3:before {
 				background: #3d4249 url("images/overlay.png");
-			}
+			} */
 
 			#footer.wrapper > .row > .bottomRow >.restaurantName > span{
 				font-family: 'Alumni Sans Collegiate One', sans-serif !important; 
 				font-size: 3em;
-				margin: 0 100px 0 70px;
+				margin: 0 100px 0 0px;
 				color:#fff;
 			}
 
@@ -2513,6 +2513,8 @@ section#header.wrapper{
 			body, input, textarea, select {
 				font-size: 12pt;
 			}
+
+		
 
 	}
 
@@ -2642,10 +2644,10 @@ section#header.wrapper{
 
 		/* Footer */
 
-			#footer .feature-list {
+			/* #footer .feature-list {
 				border-top: solid 1px rgba(255, 255, 255, 0.05);
 				padding-top: 4em;
-			}
+			} */
 
 	}
 
@@ -2654,6 +2656,10 @@ section#header.wrapper{
 				#footer .feature-list > .row > :nth-child(2) > section {
 					border-top: 0;
 					padding-top: 0;
+				}
+
+				.firstBottom,.secondBottom,.thirdBottom,.fourthBottom,.fifthBottom{
+					margin: 0 25px;
 				}
 
 		}
@@ -2837,6 +2843,8 @@ section#header.wrapper{
 				transform: translateX(0);
 			}
 
+
+			
 	}
 
 /* Small */
@@ -2898,8 +2906,9 @@ section#header.wrapper{
 				display: block;
 				width: 100%;
 				font-size: 1em;
-				max-width: 30em;
-				margin: 0 auto;
+				max-width: 10em;
+				margin-left:23em;
+				/* margin: 0 auto; */
 			}
 
 		/* Actions */
@@ -3037,7 +3046,7 @@ section#header.wrapper{
 
 		/* Footer */
 
-			#footer {
+			/* #footer {
 				padding-bottom: 0;
 			}
 
@@ -3050,8 +3059,16 @@ section#header.wrapper{
 				#footer .feature-list {
 					border-top: 0;
 					padding-top: 0;
+				} */
+
+				.firstBottom,.secondBottom,.thirdBottom,.fourthBottom,.fifthBottom{
+					margin: 0;
+
 				}
 
+				#footer.wrapper > .row > .bottomRow >.restaurantName > span{
+	margin-right:30px;
+}
 		/* Copyright */
 
 			#copyright {
@@ -3078,10 +3095,11 @@ section#header.wrapper{
 
 	}
 
-    form .searchLocation #Region{
-        width: 100px;
+    form.searchLocation #Region{
+        width: 383px;
         display: flex;
         justify-content: flex-start;
+		margin-left: 42.4em;
     }
 
 
@@ -3096,7 +3114,7 @@ section#header.wrapper{
 	div.bottomRow{
 		display: flex;
 		list-style-type: none;
-		margin-left: 0%;
+		margin-left: 60px;
 		
 	}
 
@@ -3107,3 +3125,66 @@ section#header.wrapper{
 	ul.icons{
 		display: flex;
 	}
+
+	.searchButton{
+		background-color: #9F0E07;
+		margin-top: 20px;
+	}
+
+	
+
+	@media screen and (max-width: 1680px) {
+
+	form.searchLocation #Region{
+				
+		margin-left: 41.4em;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+
+	form.searchLocation #Region{
+				
+		margin-left: 31.4em;
+	}
+}
+
+@media screen and (max-width: 980px) {
+
+	form.searchLocation #Region{
+				
+		margin-left: 21.4em;
+		margin-top: 30px;
+	}
+	.searchButton{
+		margin-top: 100px;
+		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width: 736px) {
+
+	form.searchLocation #Region{
+				
+		margin-left: 13.4em;
+	}
+}
+
+@media screen and (max-width:425px){
+
+	#footer.wrapper > .row > .bottomRow > .restaurantName > span{
+		font-size: 1.7em;
+		margin-right: 0;
+	}
+	.firstBottom,.secondBottom,.thirdBottom,.fourthBottom,.fifthBottom{
+		font-size: 12px;
+		margin-right: 0;
+	}
+	div.bottomRow{
+		margin-left: 30px;
+	}
+	ul.icons{
+		margin: 0;
+	}
+
+}

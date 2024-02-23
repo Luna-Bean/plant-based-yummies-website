@@ -207,6 +207,9 @@ input, select, textarea {
 			.container {
 				width: calc(100% - 100px);
 			}
+			li article a.image.left img{
+				width:9em;
+			}
 
 		}
 
@@ -1378,6 +1381,7 @@ input, select, textarea {
 
 					.row.gtr-50 > * {
 						padding: 15px 0 0 15px;
+						margin-left:34px;
 					}
 
 					.row.gtr-50.gtr-uniform {
@@ -3125,4 +3129,13 @@ input, select, textarea {
 	}
 	ul.icons{
 		display: flex;
+	}
+
+
+
+	@media screen and (max-width: 980px) {
+
+		li article a.image.left img{
+			width:9em;
+		}
 	}

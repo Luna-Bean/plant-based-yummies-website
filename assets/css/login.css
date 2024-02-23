@@ -469,9 +469,9 @@ input, select, textarea {
 			margin-left: -50px;
 		}
 
-			.row > * {
-				padding: 50px 0 0 50px;
-			}
+		.row > * {
+			padding: 50px 0 0 95px;
+		}
 
 			.row.gtr-uniform {
 				margin-top: -50px;
@@ -712,9 +712,9 @@ input, select, textarea {
 					margin-left: -50px;
 				}
 
-					.row > * {
-						padding: 50px 0 0 50px;
-					}
+				.row > * {
+					padding: 50px 0 0 50px;
+				}
 
 					.row.gtr-uniform {
 						margin-top: -50px;
@@ -958,7 +958,7 @@ input, select, textarea {
 				}
 
 					.row > * {
-						padding: 35px 0 0 35px;
+						padding: 35px 0 0 0px;
 					}
 
 					.row.gtr-uniform {
@@ -1202,9 +1202,9 @@ input, select, textarea {
 					margin-left: -50px;
 				}
 
-					.row > * {
-						padding: 50px 0 0 50px;
-					}
+				.row > * {
+					padding: 50px 0 0 70px;
+				}
 
 					.row.gtr-uniform {
 						margin-top: -50px;
@@ -1501,7 +1501,9 @@ input, select, textarea {
 	article {
 		margin: 0 0 4em 0;
 	}
-
+#loginAccount{
+	margin-left:10px;
+}
 	section > :last-child,
 	article > :last-child,
 	section:last-child,
@@ -2359,7 +2361,7 @@ section#header.wrapper{
 			color: #fff;
 		}
 
-		#footer hr {
+		/* #footer hr {
 			border-top-color: #333;
 			border-top-color: rgba(255, 255, 255, 0.05);
 		}
@@ -2444,15 +2446,19 @@ section#header.wrapper{
 
 			#footer .feature-list h3:before {
 				background: #3d4249 url("images/overlay.png");
-			}
+			} */
 
 			#footer.wrapper > .row > .bottomRow >.restaurantName > span{
 				font-family: 'Alumni Sans Collegiate One', sans-serif !important; 
 				font-size: 3em;
-				margin: 0 100px 0 70px;
+				margin: 0 100px 0 0px;
 				color:#fff;
 			}
 
+
+			.firstBottom, .secondBottom,.icons, .thirdBottom,.fourthBottom,.fifthBottom{
+				margin:0 23px;
+			} 
 /* Copyright */
 
 	#copyright {
@@ -2641,11 +2647,14 @@ section#header.wrapper{
 
 		@media screen and (max-width: 980px) and (min-width: 737px) {
 
-				#footer .feature-list > .row > :nth-child(2) > section {
+				/* #footer .feature-list > .row > :nth-child(2) > section {
 					border-top: 0;
 					padding-top: 0;
-				}
+				} */
 
+				.firstBottom,.secondBottom,.thirdBottom,.fourthBottom,.fifthBottom{
+					margin: 0 25px;
+				}
 		}
 
 	@media screen and (max-width: 980px) {
@@ -3027,7 +3036,7 @@ section#header.wrapper{
 
 		/* Footer */
 
-			#footer {
+			/* #footer {
 				padding-bottom: 0;
 			}
 
@@ -3040,22 +3049,27 @@ section#header.wrapper{
 				#footer .feature-list {
 					border-top: 0;
 					padding-top: 0;
-				}
+				} */
 
 
 
-				#footer.wrapper > .row > .bottomRow >.restaurantName > span{
+				/* #footer.wrapper > .row > .bottomRow >.restaurantName > span{
 					font-family: 'Alumni Sans Collegiate One', sans-serif; 
 					font-size: 60px !important;
 					margin: 0 100px 0 0px;
 					color:#fff;
-				}
+				} */
 	
 				/*Footer */
 	
 				.firstBottom, .secondBottom,.icons, .thirdBottom,.fourthBottom,.fifthBottom{
-					margin:0 30px;
+					margin:0;
 				} 
+
+				#footer.wrapper > .row > .bottomRow >.restaurantName > span{
+					margin-right:4px;
+					font-size: 1.7em;
+				}
 
 		/* Copyright */
 
@@ -3091,7 +3105,7 @@ section#header.wrapper{
     width:auto;
 }
 
-    .loginForm .form1,.loginForm .form2{
+    .loginForm1 .form1,.loginForm2 .form2{
         margin-bottom: 0px 0px 2px 10px;
         width: 30px;
 
@@ -3115,7 +3129,7 @@ section#header.wrapper{
 	div.bottomRow{
 		display: flex;
 		list-style-type: none;
-		margin-left: 3%;
+		margin-left: 60px;
 		
 	}
 
@@ -3125,4 +3139,35 @@ section#header.wrapper{
 	}
 	ul.icons{
 		display: flex;
-	}								
+	}								@media screen and (max-width:425px){
+
+		#footer.wrapper > .row > .bottomRow > .restaurantName > span{
+			font-size: 1.7em;
+			margin-right: 0;
+		}
+		.firstBottom,.secondBottom,.thirdBottom,.fourthBottom,.fifthBottom{
+			font-size: 12px;
+			margin-right: 0;
+		}
+		div.bottomRow{
+			margin-left: 30px;
+		}
+		ul.icons{
+			margin: 0;
+		}
+	
+	}
+
+	@media screen and (max-width: 980px)  {
+		
+div.bottomRow{
+	margin-left:0;
+}
+		
+	}
+
+@media screen and (max-width: 425px){
+#footer.wrapper > .row > .bottomRow >.restaurantName > span {
+    margin-right: -61px;
+}
+}

@@ -2105,9 +2105,9 @@ section#header.wrapper{
 				color: #d7d9dc;
 			}
 
-			.wrapper.style3 .image {
+			/* .wrapper.style3 .image {
 				border: solid 10px #fff;
-			}
+			} */
 
 /* Page Wrapper */
 
@@ -3067,5 +3067,7 @@ section#header.wrapper{
 		justify-content:space-around;
 		height: 200px;
 		width:200px;
+		margin-left: -45px;
+		margin-top: 18px;
 		
 	}

@@ -6,7 +6,9 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
+/* media query min 737px{
+	
+} */
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1744,6 +1746,8 @@ input, select, textarea {
 		.button.style1 {
 			background: #9f0e07 url("images/overlay.png");
 			color: #fff;
+			width:20em;
+			margin-left: 20px;
 			
 		}
 
@@ -1766,6 +1770,7 @@ input, select, textarea {
 /* updated 8/10/2022 */
 			.button.style1.menuButtons{
 				text-align: center;
+
 			}
 
 		input[type="button"].style2,
@@ -2906,6 +2911,15 @@ section#header.wrapper{
 					margin: 0;
 				}
 
+				/*Pictures*/
+				img.breakfast-pic,img.lunch-pic,img.dinner-pic,img.desserts-pic,img.sides-pic,img.drinks-pic{
+					margin-left: 14.4em
+				}
+			
+				.button.style1.menuButtons{
+					margin-left: 185px;
+				}
+
 		/* Button */
 
 			input[type="button"],
@@ -2923,7 +2937,10 @@ section#header.wrapper{
 		/* Actions */
 .button.style1{
 	text-align: center;
-	margin-left:85px !important;
+	/* margin-left:85px !important; */
+	width:16em;
+	margin-top: 13px;
+	margin-left: 216px;
 }
 			/* ul.actions {
 				margin: 2em 0 0 0;
@@ -3073,6 +3090,10 @@ section#header.wrapper{
 					padding-top: 0;
 				}
 
+				/* #footer.wrapper>.row>.bottomRow>.restaurantName>span{
+					text-align:left;
+				} */
+
 		/* Copyright */
 
 			#copyright {
@@ -3116,4 +3137,74 @@ section#header.wrapper{
 	}
 
 
-	
+@media screen and (max-width: 670px){
+		img.breakfast-pic,img.lunch-pic,img.dinner-pic,img.desserts-pic,img.sides-pic,img.drinks-pic{
+			margin-left: 12.4em;
+		}
+		.button.style1{
+			margin-left: 190px;
+		}
+	}
+
+@media screen and (max-width: 600px){
+			img.breakfast-pic,img.lunch-pic,img.dinner-pic,img.desserts-pic,img.sides-pic,img.drinks-pic{
+				margin-left: 10.4em;
+			}
+			.button.style1{
+				margin-left:170px;
+			}
+		}
+
+		@media screen and (max-width: 550px){
+			img.breakfast-pic,img.lunch-pic,img.dinner-pic,img.desserts-pic,img.sides-pic,img.drinks-pic{
+				margin-left: 8.4em;
+			}
+			.button.style1{
+				margin-left: 140px;
+			}
+		}
+
+
+		@media screen and (max-width: 500px){
+			img.breakfast-pic,img.lunch-pic,img.dinner-pic,img.desserts-pic,img.sides-pic,img.drinks-pic{
+				margin-left: 6.4em;
+			}
+			.button.style1{
+				margin-left: 110px;
+			}
+		}
+		@media screen and (max-width: 470px){
+			img.breakfast-pic,img.lunch-pic,img.dinner-pic,img.desserts-pic,img.sides-pic,img.drinks-pic{
+				margin-left: 6.4em;
+				width:250px;
+				height:250px;
+			}
+			.button.style1{
+				margin-left: 54px;
+			}
+		}
+
+		@media screen and (max-width: 400px){
+			img.breakfast-pic,img.lunch-pic,img.dinner-pic,img.desserts-pic,img.sides-pic,img.drinks-pic{
+				margin-left: 6.4em;
+				width:229px;
+				height: 229px;
+			}
+
+			.button.style1{
+				width:10em;
+				margin-left: 69px;
+			}
+		}
+
+		@media screen and (max-width: 350px){
+			img.breakfast-pic,img.lunch-pic,img.dinner-pic,img.desserts-pic,img.sides-pic,img.drinks-pic{
+				margin-left: 4.4em;
+				width:229px;
+				height: 229px;
+			}
+
+			.button.style1{
+				margin-left: 43px;
+			}
+		}
